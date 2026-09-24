@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Smart Calculator</title>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+    "
+  >
+    <div
+      style="
+        width: 400px;
+        margin: 80px auto;
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <h1 style="text-align: center; color: #4a148c; margin-bottom: 10px">
+        🧮 Smart Calculator
+      </h1>
+
+      <p
+        style="
+          text-align: center;
+          color: #777;
+          font-size: 16px;
+          margin-bottom: 30px;
+        "
+      >
+        Simple • Fast • Easy Calculation
+      </p>
+
+      <form action="/callme" method="get">
+        <label
+          style="
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+          "
+        >
+          First Number
+        </label>
+
+        <input
+          type="text"
+          name="num1"
+          placeholder="Enter first number"
+          style="
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+          "
+          required
+        />
+
+        <label
+          style="
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+          "
+        >
+          Second Number
+        </label>
+
+        <input
+          type="text"
+          name="num2"
+          placeholder="Enter second number"
+          style="
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 25px;
+          "
+          required
+        />
+
+        <label
+          style="
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+          "
+        >
+          Select Operation
+        </label>
+
+        <select
+          name="operation"
+          style="
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 25px;
+          "
+        >
+          <option value="add">Addition (+)</option>
+          <option value="multiply">Multiplication (×)</option>
+        </select>
+
+        <button
+          type="submit"
+          style="
+            width: 100%;
+            padding: 14px;
+            background: #6a1b9a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+          "
+        >
+          Calculate
+        </button>
+      </form>
+
+      <div
+        style="
+          margin-top: 25px;
+          padding: 15px;
+          background: #f3e5f5;
+          border-radius: 8px;
+          text-align: center;
+          color: #6a1b9a;
+        "
+      >
+        Result will be displayed here
+      </div>
+    </div>
+  </body>
+</html>
